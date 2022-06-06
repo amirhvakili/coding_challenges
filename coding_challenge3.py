@@ -9,7 +9,6 @@ picture = [
     [0, 0, 0, 1, 0, 0, 0]
 ]
 
-i = 0
 for item in picture:
     for i in item:
         if(i == 0):
