@@ -10,10 +10,10 @@ picture = [
 ]
 
 for item in picture:
-    for i in item:
-        if(i == 0):
+    for pixel in item:
+        if pixel:
             print(" ", end="")
-        elif(i == 1):
+        else:
             print("*", end="")
 
     print("")
