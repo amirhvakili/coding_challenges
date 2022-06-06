@@ -17,4 +17,4 @@ for item in picture:
         elif(i == 1):
             print("*", end="")
 
-    print("\n")
+    print("")
