@@ -1,1 +1,1 @@
-# coding_challenges
+Python exercises and challenges here
