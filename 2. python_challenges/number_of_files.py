@@ -1,7 +1,7 @@
 import os
 
 files = [file for file in os.listdir(
-    './1. python_challenges/') if file.endswith('.py')]
+    './2. python_challenges/') if file.endswith('.py')]
 if len(files) >= 25:
     print(len(files))
     print('Too many python files in a folder. Please create a new folder')
