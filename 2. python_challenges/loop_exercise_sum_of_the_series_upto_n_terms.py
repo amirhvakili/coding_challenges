@@ -12,14 +12,30 @@
 # Expected output:
 
 # 24690
-user_input_number = int(input('Please enter a number between 1 to 9: '))
-first_number = user_input_number
-second_number = first_number * 10 + first_number
-all_numbers = [first_number, second_number]
-n = 5
-sum = first_number + second_number
-for i in range(n-2):
-    first_number = second_number
-    second_number = first_number * 10 + user_input_number
-    all_numbers.append(second_number)
-    sum += second_number
+
+from logging import exception
+
+
+while True:
+    try:
+        user_input_number = int(
+            input('Please enter a positive natural number between 1 to 9 (1 and 9 are accepted as well): '))
+        if 1 <= user_input_number <= 10:
+            first_number = user_input_number
+            second_number = first_number * 10 + first_number
+            all_numbers = [first_number, second_number]
+            n = 5
+            sum = first_number + second_number
+            for i in range(n-2):
+                first_number = second_number
+                second_number = first_number * 10 + user_input_number
+                all_numbers.append(second_number)
+                sum += second_number
+
+            print(f'numbers are: {all_numbers}')
+            print(f'The sum of these numbers is: {sum}')
+            break
+        else:
+            raise Exception()
+    except:
+        continue
