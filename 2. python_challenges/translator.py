@@ -1,4 +1,3 @@
-from distutils.log import error
 from googletrans import Translator
 
 # init the Google API translator
